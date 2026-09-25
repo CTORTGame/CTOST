@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTOST - Make every line of code meaningful</title>
+  <meta name="description" content="CTOST 是一家专注于网络技术、云基础设施与实时互动的科技公司，旗下拥有 CTOST SERVE、CTORT GAME 与 COLORST 游戏引擎。" />
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" type="image/png" href="assets/photos/ctost-logo.png" />
+  <link rel="stylesheet" href="assets/css/style.css?v=40" />
+</head>
+<body data-page="home">
+
+  <!-- ================= Nav ================= -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo"><img class="logo-mark" src="assets/photos/ctost-logo.png" alt="" /><span class="logo-text">CTOST</span></a>
+      <span class="nav-spacer"></span>
+
+      <nav class="nav-links">
+        <a href="#ctost-server">CTOST SERVE</a>
+        <a href="#ctort-game">CTORT GAME</a>
+        <a href="#colorst">COLORST</a>
+        <a href="#news">新闻动态</a>
+        <a href="joinus/index.html">加入我们</a>
+        <a href="#contact">联系我们</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= Hero ================= -->
+  <section class="hero hero-light">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-glass"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-tag reveal">Make every line of code meaningful</div>
+      <h1 class="hero-title">CTOST</h1>
+      <p class="hero-desc reveal" data-delay="2">
+        让每一行代码，都成为连接世界的基石。
+      </p>
+      <div class="hero-actions reveal" data-delay="3">
+        <a href="#ctost-server" class="btn btn-primary">探索业务</a>
+        <a href="#colorst" class="btn btn-ghost">了解 COLORST</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <span class="bar"></span>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       01 · CTOST SERVE（米哈游式全屏产品面板）
+       ================================================================ -->
+  <section class="mhy-panel serve-matrix" id="ctost-server">
+    <!-- 0/1 竖列下落背景（黑客代码风格） -->
+    <canvas class="serve-matrix-canvas" aria-hidden="true"></canvas>
+    <div class="serve-matrix-veil" aria-hidden="true"></div>
+    <span class="mhy-vertical">SERVE</span>
+    <div class="container mhy-inner">
+      <div class="mhy-info serve-info">
+        <span class="mhy-index reveal">01</span>
+        <div class="mhy-label reveal">Cloud Infrastructure Studio</div>
+        <h2 class="mhy-name reveal" data-delay="1">CTOST<br />SERVE</h2>
+        <p class="mhy-desc reveal" data-delay="2">看不见的技术基石。我们运营支撑全球业务的计算与网络底座，让每一次请求、每一场联机、每一份数据，都快速、稳定、安全。</p>
+
+        <ul class="mhy-points reveal" data-delay="2">
+          <li>弹性云计算 · 秒级交付</li>
+          <li>全球网络调度 · 智能路由</li>
+          <li>T 级安全防护 · 全链路加密</li>
+          <li>分布式数据服务 · 高可靠</li>
+        </ul>
+
+        <div class="mhy-stats reveal" data-delay="3">
+          <div><strong><span data-count="99.99" data-decimals="2">0</span>%</strong><small>服务可用性</small></div>
+          <div><strong><span data-count="30">0</span>+</strong><small>全球节点</small></div>
+          <div><strong><span data-count="40">0</span>%</strong><small>延迟降幅</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       02 · CTORT GAME（图文左右反转）
+       ================================================================ -->
+  <section class="mhy-panel mhy-reverse" id="ctort-game">
+    <span class="mhy-vertical">GAME</span>
+    <div class="container mhy-inner">
+      <div class="mhy-visual reveal">
+        <img src="assets/photos/ctortgame.png"
+          alt="CTORT GAME 互动娱乐" />
+      </div>
+
+      <div class="mhy-info">
+        <span class="mhy-index reveal">02</span>
+        <div class="mhy-label reveal">Interactive Entertainment Studio</div>
+        <h2 class="mhy-name reveal" data-delay="1">CTORT<br />GAME</h2>
+        <p class="mhy-desc reveal" data-delay="2">为玩家，创造世界。游戏是技术与艺术的终极交汇，我们致力于为全世界玩家创造值得热爱、值得记住的虚拟世界。</p>
+
+        <ul class="mhy-points reveal" data-delay="2">
+          <li>原创 IP 孵化 · 长线运营</li>
+          <li>自研引擎 · 实时渲染技术</li>
+          <li>全球同服 · 多端互通</li>
+          <li>全球化发行 · 多语言本地化</li>
+        </ul>
+
+        <a href="ctort/index.html" class="mhy-more reveal" data-delay="3">了解工作室 <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       03 · COLORST（鸿蒙游戏引擎 · 开发中）
+       ================================================================ -->
+  <section class="mhy-panel colorst-float" id="colorst">
+    <!-- 一串串代码浮动背景 -->
+    <canvas class="colorst-canvas" aria-hidden="true"></canvas>
+    <div class="colorst-veil" aria-hidden="true"></div>
+    <span class="mhy-vertical">ENGINE</span>
+    <div class="container mhy-inner">
+      <div class="mhy-info colorst-info">
+        <span class="mhy-badge-inline reveal">开发中 · IN PROGRESS</span>
+        <span class="mhy-index reveal">03</span>
+        <div class="mhy-label reveal">Game Engine · HarmonyOS Native</div>
+        <h2 class="mhy-name reveal" data-delay="1">COLORST</h2>
+        <p class="mhy-desc reveal" data-delay="2">为鸿蒙而生的游戏引擎。一个正在诞生中的引擎，原生运行于 HarmonyOS 之上，让创作者在华为生态中释放全部想象力。</p>
+
+        <ul class="mhy-points reveal" data-delay="2">
+          <li>鸿蒙原生 · 一次开发多端运行</li>
+          <li>高性能渲染管线 · 主机级画面</li>
+          <li>组件化架构 · 可视化编辑器</li>
+          <li>手机 / 平板 / 智慧屏跨端协同</li>
+        </ul>
+
+        <a href="mailto:contact@ctost.cn" class="mhy-more reveal" data-delay="3">成为早期合作伙伴 <span>→</span></a>
+      </div>
+
+      <div class="mhy-visual colorst-logo reveal" data-delay="2">
+        <img src="assets/photos/colorst-logo-iron.png" alt="COLORST 引擎金属 Logo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       04 · 新闻动态
+       ============================================================ -->
+  <section class="section" id="news" style="background:var(--bg-soft); border-block:1px solid var(--line);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Newsroom</span>
+        <h2 class="section-title">新闻动态</h2>
+      </div>
+      <ul class="news-list">
+        <li class="news-item reveal">
+          <div class="news-meta">
+            <span class="news-date">2026.09</span>
+            <span class="news-tag">产品</span>
+          </div>
+          <h4 class="news-title">COLORST 鸿蒙原生游戏引擎正式进入开发阶段</h4>
+          <span class="news-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="news-item reveal" data-delay="1">
+          <div class="news-meta">
+            <span class="news-date">2026.08</span>
+            <span class="news-tag">游戏</span>
+          </div>
+          <h4 class="news-title">CTORT GAME 首款作品概念预告公开</h4>
+          <span class="news-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="news-item reveal" data-delay="2">
+          <div class="news-meta">
+            <span class="news-date">2026.06</span>
+            <span class="news-tag">基础设施</span>
+          </div>
+          <h4 class="news-title">SERVE 全球节点扩展至 30+，平均延迟降低 40%</h4>
+          <span class="news-arrow" aria-hidden="true">→</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       06 · 加入我们（独立页面 joinus）
+       ============================================================ -->
+  <section class="cta" id="join">
+    <div class="cta-bg"></div>
+    <div class="container">
+      <h2 class="reveal">与我们一起，构建未来</h2>
+      <p class="reveal" data-delay="1">我们寻找热爱技术、渴望创造的同行者。查看 SERVE、CTORT 与 COLORST 的全部职位空缺。</p>
+      <div class="reveal" data-delay="2">
+        <a href="joinus/index.html" class="btn btn-primary">加入我们 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       07 · 联系我们
+       ============================================================ -->
+  <section class="section" id="contact" style="background:var(--bg-soft); border-block:1px solid var(--line);">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="eyebrow reveal">Contact</span>
+          <h2 class="section-title reveal" data-delay="1">与我们取得联系</h2>
+          <ul class="contact-list">
+            <li class="reveal"><span class="ci-label">商务合作</span><a href="mailto:biz@ctost.cn">biz@ctost.cn</a></li>
+            <li class="reveal"><span class="ci-label">技术支持</span><a href="mailto:support@ctost.cn">support@ctost.cn</a></li>
+            <li class="reveal"><span class="ci-label">加入我们 / 投递简历</span><a href="mailto:hr@ctost.cn">hr@ctost.cn</a></li>
+            <li class="reveal"><span class="ci-label">一般咨询</span><a href="mailto:contact@ctost.cn">contact@ctost.cn</a></li>
+          </ul>
+          <p class="contact-note reveal" data-delay="2">我们会在 1–2 个工作日内回复你的消息。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 通用模态弹窗（隐私政策 / 用户协议） ================= -->
+  <div class="modal" id="legal-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" data-close aria-label="关闭">×</button>
+      <h3 class="modal-title" id="modal-title"></h3>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ================= 回到顶部 ================= -->
+  <button class="to-top" id="to-top" aria-label="回到顶部">↑</button>
+
+  <!-- ================= Footer ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span class="logo-text">CTOST</span></a>
+          <p>CTOST Company — 专注于网络技术、云基础设施与实时互动，让连接更有价值。</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>旗下业务</h5>
+          <a href="#ctost-server">CTOST SERVE<small class="f-domain">server.ctost.cn</small></a>
+          <a href="#ctort-game">CTORT GAME<small class="f-domain">ctort.ctost.cn</small></a>
+          <a href="#colorst">COLORST<small class="f-domain">colorst.ctost.cn</small></a>
+        </div>
+
+        <div class="footer-col">
+          <h5>公司</h5>
+          <a href="#news">新闻动态</a>
+          <a href="joinus/index.html">加入我们</a>
+          <a href="#contact">商务合作</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>支持</h5>
+          <a href="mailto:support@ctost.cn">技术支持</a>
+          <a href="#" data-modal="privacy">隐私政策</a>
+          <a href="#" data-modal="terms">用户协议</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> CTOST Company 版权所有</span>
+        <span>
+          <a href="#" data-modal="privacy">隐私政策</a> ·
+          <a href="#" data-modal="terms">用户协议</a> ·
+          ICP 备案信息
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* 把 CTOST 渲染为由 0/1 共同组成的字形（背景为空），并带 0/1 跳变动效 */
+    (function () {
+      function buildShapeMask(text) {
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+        const fontSize = 240;
+        const font = `800 ${fontSize}px Inter, 'Segoe UI', system-ui, sans-serif`;
+        ctx.font = font;
+        const metrics = ctx.measureText(text);
+        const w = Math.ceil(metrics.width) + 60;
+        const h = Math.ceil(fontSize * 1.4);
+        canvas.width = w;
+        canvas.height = h;
+        ctx.font = font;
+        ctx.fillStyle = "#000";
+        ctx.textBaseline = "middle";
+        ctx.fillText(text, 30, h / 2);
+
+        const img = ctx.getImageData(0, 0, w, h).data;
+        const cellW = Math.max(2, Math.floor(w / 96));
+        const cellH = cellW * 2;
+        const cols = Math.floor(w / cellW);
+        const rows = Math.floor(h / cellH);
+
+        /* 按格子区域覆盖率判断：只要格子内有足够笔画像素即算字形内部，
+           避免 T 等字母的细竖笔/底部因单点采样而漏行 */
+        const mask = [];
+        for (let r = 0; r < rows; r++) {
+          const row = new Array(cols).fill(false);
+          for (let c = 0; c < cols; c++) {
+            const x0 = c * cellW, y0 = r * cellH;
+            let filled = 0, total = 0;
+            for (let y = y0; y < y0 + cellH; y += 2) {
+              for (let x = x0; x < x0 + cellW; x += 2) {
+                total++;
+                if (img[(y * w + x) * 4 + 3] > 100) filled++;
+              }
+            }
+            row[c] = total > 0 && filled / total > 0.18;
+          }
+          mask.push(row);
+        }
+        return { mask, cols, rows };
+      }
+
+      const title = document.querySelector(".hero-title");
+      if (!title) return;
+
+      const { mask, cols, rows } = buildShapeMask("CTOST");
+      title.dataset.cols = cols;
+      title.classList.add("is-binary");
+
+      /* 构建由字符 span 组成的网格：字形内为 0/1，背景为空格 */
+      const grid = []; /* grid[r][c] = span 或 null（背景） */
+      const frag = document.createDocumentFragment();
+      for (let r = 0; r < rows; r++) {
+        const lineSpans = [];
+        for (let c = 0; c < cols; c++) {
+          if (mask[r][c]) {
+            const s = document.createElement("span");
+            s.className = "bch";
+            s.textContent = Math.random() < 0.5 ? "0" : "1";
+            s.dataset.mask = "1";
+            frag.appendChild(s);
+            lineSpans.push(s);
+          } else {
+            frag.appendChild(document.createTextNode(" "));
+            lineSpans.push(null);
+          }
+        }
+        frag.appendChild(document.createTextNode("\n"));
+        grid.push(lineSpans);
+      }
+      title.textContent = "";
+      title.appendChild(frag);
+
+      /* 收集所有字形字符 span */
+      const spans = [];
+      for (const line of grid) for (const s of line) if (s) spans.push(s);
+
+      /* 三个蓝色：浅蓝 / 蓝 / 深蓝，字符随机取色并随机切换 */
+      const BLUES = ["#7dd3fc", "#3b82f6", "#1e40af"];
+      const randBlue = () => BLUES[(Math.random() * BLUES.length) | 0];
+      /* 初始：每个字符随机一个蓝色 */
+      spans.forEach((s) => { s.style.color = randBlue(); });
+
+      /* 根据容器宽度动态调整字号 */
+      function sizeBinaryTitle() {
+        const container = title.closest(".hero-inner");
+        const avail = container ? container.clientWidth - 40 : window.innerWidth - 40;
+        const fs = (avail * 0.52) / (cols * 0.6);
+        title.style.fontSize = Math.max(5, Math.min(fs, 18)) + "px";
+      }
+      sizeBinaryTitle();
+      window.addEventListener("resize", sizeBinaryTitle);
+
+      /* 0/1 跳变 + 颜色随机切换动效 */
+      const CHANGES_PER_TICK = Math.max(3, Math.round(spans.length * 0.03));
+      setInterval(() => {
+        for (let i = 0; i < CHANGES_PER_TICK; i++) {
+          const s = spans[(Math.random() * spans.length) | 0];
+          if (!s) continue;
+          s.textContent = s.textContent === "0" ? "1" : "0";
+          s.style.color = randBlue(); /* 每次跳变随机换一个蓝色 */
+        }
+      }, 60);
+    })();
+  </script>
+  <script>
+    /* SERVE 面板 · 0/1 竖列下落背景 */
+    (function () {
+      const canvas = document.querySelector(".serve-matrix-canvas");
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+      const FONT = 15;
+      let cols, drops, speeds;
+
+      function resize() {
+        const panel = canvas.parentElement;
+        canvas.width = panel.clientWidth;
+        canvas.height = panel.clientHeight;
+        cols = Math.ceil(canvas.width / FONT);
+        drops = new Array(cols);
+        speeds = new Array(cols);
+        for (let i = 0; i < cols; i++) {
+          drops[i] = Math.random() * (canvas.height / FONT);
+          speeds[i] = 0.4 + Math.random() * 0.9;
+        }
+      }
+      resize();
+      window.addEventListener("resize", resize);
+
+      function draw() {
+        ctx.fillStyle = "rgba(247,248,250,0.14)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.font = FONT + "px Consolas, monospace";
+        for (let i = 0; i < cols; i++) {
+          const ch = Math.random() < 0.5 ? "0" : "1";
+          const x = i * FONT, y = drops[i] * FONT;
+          ctx.fillStyle = Math.random() < 0.06 ? "#38bdf8" : "rgba(59,130,246,0.55)";
+          ctx.fillText(ch, x, y);
+          if (y > canvas.height && Math.random() > 0.975) drops[i] = 0;
+          drops[i] += speeds[i];
+        }
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+  </script>
+  <script>
+    /* COLORST 面板 · 一串串代码浮动背景 */
+    (function () {
+      const canvas = document.querySelector(".colorst-canvas");
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+
+      /* 真实代码片段，营造"一串串代码"漂浮的观感 */
+      const SNIPPETS = [
+        "import { Engine } from 'colorst'",
+        "const engine = new Engine({ harmonyOS: true })",
+        "renderer.createScene('world')",
+        "function onFrame(dt) { render(dt); }",
+        "node.addComponent(new Sprite())",
+        "await engine.build({ target: 'harmony' })",
+        "shader.compile(vertexSource)",
+        "physics.setGravity(0, -9.8)",
+        "entity.transform.position = vec3(0)",
+        "export default class Player extends Actor",
+        "canvas.bindSurface('#viewport')",
+        "engine.pipeline.push(Pass.Bloom)",
+        "const mesh = Mesh.load('./hero.glb')",
+        "audio.play('theme.wav', { loop: true })",
+        "renderTarget.clear(color.hex(0x00))",
+        "if (input.isKeyDown('Space')) jump()",
+        "light.direction = normalize(vec3(-1,-1,0))",
+        "camera.follow(target, { lerp: 0.1 })",
+        "const scene = await Scene.deserialize(json)",
+        "material.setFloat('roughness', 0.4)",
+        "particle.emit({ count: 1024 })",
+        "world.query(AABB(x,y,w,h))",
+        "schedule.task(() => syncState(), 0)",
+        "const [w,h] = surface.getSize()",
+        "for (const entity of entities) update(entity)",
+        "return v.lengthSq() > eps",
+        "const state = reactive({ score: 0 })",
+        "texture.wrapS = WrapMode.Repeat",
+        "animator.play('idle', { crossfade: 0.2 })",
+        "collider.on('enter', onHit)",
+        "const pipeline = new RenderQueue()",
+        "await asset.preload(bundle.manifest)",
+        "mat4.perspective(fov, aspect, 0.1, 100)",
+        "system.register('move', MoveSystem)",
+        "const ui = canvas.createNode('hud')",
+        "noise.simplex3(x, y, t)",
+        "buffer.copy(gpu.memory, offset)",
+        "const joystick = input.gamepad(0)",
+        "engine.saveState(slot, data)",
+        "shadow.mapSize = ivec2(2048)",
+        "const tween = tweenTo(obj, props, 1.0)",
+        "renderer.setClearColor(0x0a0f1c)",
+        "const channel = await rpc.connect('room')",
+        "quaternion.slerp(a, b, t, out)",
+        "sprite.flipX = facing < 0",
+        "const rng = new Random(seed)",
+        "viewport.resize(window.innerWidth)"
+      ];
+      const COLORS = ["#38bdf8", "#3b82f6", "#818cf8", "#a78bfa", "#22d3ee"];
+
+      let parts = [];
+      function resize() {
+        const panel = canvas.parentElement;
+        canvas.width = panel.clientWidth;
+        canvas.height = panel.clientHeight;
+        const count = Math.max(16, Math.round(canvas.width / 68));
+        parts = Array.from({ length: count }, (_, i) => makePart(true, i / count));
+      }
+      function makePart(anywhere, slot) {
+        return {
+          text: SNIPPETS[(Math.random() * SNIPPETS.length) | 0],
+          x: anywhere ? Math.random() * canvas.width : (slot ?? Math.random()) * canvas.width,
+          y: anywhere ? Math.random() * canvas.height : canvas.height + 20,
+          vy: 0.25 + Math.random() * 0.55,   /* 向上缓慢漂浮 */
+          sway: Math.random() * Math.PI * 2, /* 水平摆动相位 */
+          swayAmp: 0.2 + Math.random() * 0.6,
+          size: 12 + Math.random() * 4,
+          alpha: 0.25 + Math.random() * 0.45,
+          color: COLORS[(Math.random() * COLORS.length) | 0]
+        };
+      }
+      resize();
+      window.addEventListener("resize", resize);
+
+      let t = 0;
+      function draw() {
+        t += 0.01;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.font = "600 14px Consolas, monospace";
+        ctx.textBaseline = "middle";
+        for (let i = 0; i < parts.length; i++) {
+          const p = parts[i];
+          p.y -= p.vy;
+          const x = p.x + Math.sin(t + p.sway) * p.swayAmp * 12;
+          ctx.font = `500 ${p.size}px Consolas, monospace`;
+          ctx.globalAlpha = p.alpha;
+          ctx.fillStyle = p.color;
+          ctx.fillText(p.text, x, p.y);
+          if (p.y < -30) parts[i] = makePart(false);
+        }
+        ctx.globalAlpha = 1;
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+  </script>
+  <script>
+    /* 通用交互：回到顶部 + 法律模态 + 联系表单 */
+    (function () {
+      /* ---------- 回到顶部 ---------- */
+      const toTop = document.getElementById("to-top");
+      if (toTop) {
+        window.addEventListener("scroll", () => {
+          toTop.classList.toggle("show", window.scrollY > 600);
+        }, { passive: true });
+        toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+      }
+
+      /* ---------- 法律文本 ---------- */
+      const LEGAL = {
+        privacy: {
+          title: "隐私政策",
+          body:
+            "<p>CTOST Company（以下简称“我们”）尊重并保护所有用户的个人信息。本政策说明我们如何收集、使用与保护你的信息。</p>" +
+            "<h5>1. 我们收集的信息</h5><p>当你通过本网站表单与我们联系时，我们会收集你主动提供的姓名、邮箱、主题与留言内容，仅用于回复你的咨询。</p>" +
+            "<h5>2. 信息的使用</h5><p>你的信息仅用于处理你的请求、提供技术支持或与你沟通合作事宜，不会用于任何无关用途，也不会出售给第三方。</p>" +
+            "<h5>3. 信息的保护</h5><p>我们采取合理的技术与管理措施保护你的信息，防止未经授权的访问、泄露或篡改。</p>" +
+            "<h5>4. 你的权利</h5><p>你可以随时联系我们查询、更正或删除你提供的个人信息。</p>" +
+            "<h5>5. 联系我们</h5><p>如对本政策有任何疑问，请发送邮件至 <a href='mailto:contact@ctost.cn'>contact@ctost.cn</a>。</p>"
+        },
+        terms: {
+          title: "用户协议",
+          body:
+            "<p>欢迎访问 CTOST 官方网站。在使用本网站前，请仔细阅读以下条款。</p>" +
+            "<h5>1. 内容与知识产权</h5><p>本网站所展示的文字、标识、图片与代码等内容，其知识产权均归 CTOST Company 或相关权利人所有，未经许可不得擅自使用、复制或转载。</p>" +
+            "<h5>2. 网站的使用</h5><p>你应以合法、正当的方式使用本网站，不得进行任何可能破坏网站运行、损害系统安全或妨碍他人使用的行为。</p>" +
+            "<h5>3. 免责声明</h5><ul><li>本网站内容可能会不定期更新，我们不对内容的绝对准确性与时效性作保证；</li><li>因网络、系统维护等原因导致服务暂时中断，我们不承担由此产生的责任；</li><li>本网站可能包含指向第三方网站的链接，我们不对第三方网站内容负责。</li></ul>" +
+            "<h5>4. 协议的变更</h5><p>我们可能会适时修订本协议，更新后的内容将在本页面公布。</p>" +
+            "<h5>5. 联系我们</h5><p>如对本协议有任何疑问，请发送邮件至 <a href='mailto:contact@ctost.cn'>contact@ctost.cn</a>。</p>"
+        }
+      };
+
+      /* ---------- 模态弹窗 ---------- */
+      const modal = document.getElementById("legal-modal");
+      const mTitle = document.getElementById("modal-title");
+      const mBody = document.getElementById("modal-body");
+      function openModal(key) {
+        const doc = LEGAL[key];
+        if (!doc) return;
+        mTitle.textContent = doc.title;
+        mBody.innerHTML = doc.body;
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+      function closeModal() {
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+      document.addEventListener("click", (e) => {
+        const trigger = e.target.closest("[data-modal]");
+        if (trigger) { e.preventDefault(); openModal(trigger.dataset.modal); return; }
+        if (e.target.closest("[data-close]")) closeModal();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.classList.contains("open")) closeModal();
+      });
+    })();
+  </script>
+  <script src="assets/js/liquid-glass.js?v=16"></script>
+  <script src="assets/js/main.js?v=14"></script>
+</body>
+</html>

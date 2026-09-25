@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTOST SERVE — 云基础设施工作室</title>
+  <meta name="description" content="CTOST SERVE 是 CTOST 旗下云基础设施工作室，提供弹性计算、全球网络调度与数据服务。" />
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" type="image/png" href="../assets/photos/ctost-logo.png" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=36" />
+</head>
+<body class="serve-page">
+
+  <!-- ================= Nav ================= -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo"><img class="logo-mark" src="../assets/photos/ctost-logo.png" alt="" /><span class="logo-text">CTOST</span></a>
+      <span class="nav-spacer"></span>
+
+      <nav class="nav-links">
+        <a href="#about">关于工作室</a>
+        <a href="#capabilities">产品与服务</a>
+        <a href="#join">加入我们</a>
+        <a href="../index.html">CTOST 主站</a>
+      </nav>
+      <button class="nav-toggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 0/1 竖列下落背景（黑客代码风格） -->
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+  <div class="matrix-veil" aria-hidden="true"></div>
+
+  <!-- ================= Sub Hero ================= -->
+  <section class="sub-hero sub-hero-plain">
+    <div class="container hero-inner">
+      <div class="crumb reveal"><a href="../index.html">CTOST</a> / CTOST SERVE</div>
+      <h1 class="reveal" data-delay="1">CTOST SERVE</h1>
+      <p class="reveal" data-delay="2">云基础设施工作室 — 我们运营着支撑全球业务的计算与网络底座，让每一次请求、每一场联机、每一份数据，都快速、稳定、安全。</p>
+    </div>
+  </section>
+
+  <!-- ================= Philosophy ================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-text" style="max-width:760px;">
+        <div class="reveal">
+          <span class="eyebrow">Who We Are</span>
+          <h2 class="section-title">看不见的<br />技术基石</h2>
+        </div>
+        <p class="reveal" data-delay="1" style="margin-top:28px;">
+          CTOST SERVE 由网络协议、分布式系统与运维工程团队组成，负责建设与维护 CTOST 全栈基础设施，同时也向企业客户与开发者输出标准化的云服务。
+        </p>
+        <p class="reveal" data-delay="2">
+          我们追求极致的工程可靠性：从物理机房到软件定义网络，从自动故障切换到智能流量调度，目标只有一个——<strong>让用户感知不到基础设施的存在</strong>。
+        </p>
+
+        <div class="stats reveal" data-delay="3">
+          <div class="stat">
+            <div class="num"><span data-count="99.99" data-decimals="2" data-suffix="%">0</span></div>
+            <div class="label">服务可用性 SLA</div>
+          </div>
+          <div class="stat">
+            <div class="num"><span data-count="30">0</span><span>+</span></div>
+            <div class="label">全球接入节点</div>
+          </div>
+          <div class="stat">
+            <div class="num"><span data-count="40" data-suffix="%">0</span></div>
+            <div class="label">平均延迟降幅</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Capabilities ================= -->
+  <section class="section" id="capabilities" style="border-block:1px solid var(--line);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Services</span>
+        <h2 class="section-title">产品与服务</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card reveal">
+          <div class="icon">☁️</div>
+          <h4>弹性云计算</h4>
+          <p>秒级扩容的云服务器与容器服务，按业务负载弹性伸缩，从容应对流量高峰。</p>
+        </div>
+        <div class="feature-card reveal" data-delay="1">
+          <div class="icon">🗺️</div>
+          <h4>全球网络调度</h4>
+          <p>智能 DNS 与 BGP 网络自动选择最优链路，为全球用户提供低延迟接入。</p>
+        </div>
+        <div class="feature-card reveal" data-delay="2">
+          <div class="icon">🛡️</div>
+          <h4>安全防护</h4>
+          <p>T 级带宽 DDoS 防护、入侵检测与数据加密，为业务构建纵深防御体系。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon">💾</div>
+          <h4>海量数据存储</h4>
+          <p>高可靠对象存储、分布式数据库与冷热分层，多副本保障数据安全。</p>
+        </div>
+        <div class="feature-card reveal" data-delay="1">
+          <div class="icon">📡</div>
+          <h4>智能运维 AIOps</h4>
+          <p>全链路可观测、异常自动告警与故障自愈，让运维从被动响应走向主动预测。</p>
+        </div>
+        <div class="feature-card reveal" data-delay="2">
+          <div class="icon">🔗</div>
+          <h4>高可用架构</h4>
+          <p>多可用区容灾与毫秒级故障切换，核心业务全年稳定在线，承诺 99.99% SLA。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="cta" id="join">
+    <div class="container">
+      <h2 class="reveal">把基础设施交给我们，<br />你专注创造</h2>
+      <p class="reveal" data-delay="1">无论是联机游戏还是企业业务，CTOST SERVE 都能提供可靠支撑。</p>
+      <div class="reveal" data-delay="2">
+        <a href="../index.html#contact" class="btn btn-primary">联系商务咨询</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Footer ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><span class="dot"></span>CTOST</a>
+          <p>CTOST SERVE — CTOST 旗下云基础设施工作室，让每一次连接都快速、稳定、安全。</p>
+        </div>
+        <div class="footer-col">
+          <h5>CTOST SERVE</h5>
+          <a href="#about">关于工作室</a>
+          <a href="#capabilities">产品与服务</a>
+          <a href="#join">加入我们</a>
+        </div>
+        <div class="footer-col">
+          <h5>CTOST</h5>
+          <a href="https://www.ctost.cn">主站首页</a>
+          <a href="https://ctort.ctost.cn">CTORT GAME</a>
+        </div>
+        <div class="footer-col">
+          <h5>联系</h5>
+          <a href="mailto:contact@ctost.cn">contact@ctost.cn</a>
+          <a href="#">商务合作</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> CTOST SERVE · CTOST Network Technology Co., Ltd.</span>
+        <span>隐私政策 · 用户协议</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js?v=17"></script>
+  <script>
+    /* 0/1 竖列下落背景（黑客代码风格） */
+    (function () {
+      const canvas = document.getElementById("matrix-canvas");
+      const ctx = canvas.getContext("2d");
+      const FONT = 16;
+      let cols, drops, speeds;
+
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        cols = Math.ceil(canvas.width / FONT);
+        drops = new Array(cols);
+        speeds = new Array(cols);
+        for (let i = 0; i < cols; i++) {
+          drops[i] = Math.random() * (canvas.height / FONT);
+          speeds[i] = 0.4 + Math.random() * 0.9;
+        }
+      }
+      resize();
+      window.addEventListener("resize", resize);
+
+      function draw() {
+        /* 半透明白底拖尾 */
+        ctx.fillStyle = "rgba(247,248,250,0.14)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.font = FONT + "px Consolas, monospace";
+
+        for (let i = 0; i < cols; i++) {
+          const ch = Math.random() < 0.5 ? "0" : "1";
+          const x = i * FONT;
+          const y = drops[i] * FONT;
+          /* 列头亮青，其余淡蓝 */
+          ctx.fillStyle = Math.random() < 0.06 ? "#38bdf8" : "rgba(59,130,246,0.55)";
+          ctx.fillText(ch, x, y);
+
+          if (y > canvas.height && Math.random() > 0.975) drops[i] = 0;
+          drops[i] += speeds[i];
+        }
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+  </script>
+</body>
+</html>

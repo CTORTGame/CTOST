@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 · 页面走丢了 — CTOST Company</title>
+  <style>
+    /* 404 页完全自包含：GitHub Pages 会在任意错误路径下展示本页，
+       外部相对资源会解析失败，故样式全部内联。 */
+    :root {
+      --text: #0b1220;
+      --muted: #5b6b80;
+      --line: rgba(11, 18, 32, 0.1);
+      --cyan: #0891b2;
+      --blue: #3b82f6;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background: #f7f8fa;
+      -webkit-font-smoothing: antialiased;
+      overflow: hidden;
+    }
+    /* 点阵背景（与主站首屏同语言） */
+    .dots {
+      position: fixed; inset: 0;
+      background-image: radial-gradient(rgba(11, 18, 32, 0.13) 1px, transparent 1.4px);
+      background-size: 22px 22px;
+      animation: drift 14s ease-in-out infinite alternate;
+    }
+    @keyframes drift { from { background-position: 0 0; } to { background-position: 22px 44px; } }
+    /* 磨砂渐隐，保证中部可读 */
+    .veil {
+      position: fixed; inset: 0;
+      background:
+        radial-gradient(ellipse at center, rgba(247,248,250,0.72) 0%, rgba(247,248,250,0.96) 78%);
+    }
+
+    .topbar {
+      position: fixed; top: 0; left: 0; right: 0;
+      padding: 26px 6vw;
+      display: flex; align-items: center; justify-content: space-between;
+      animation: fadeDown 0.9s var(--ease) both;
+    }
+    .wordmark {
+      font-size: 20px; font-weight: 800; letter-spacing: 0.22em;
+      color: var(--text); text-decoration: none;
+      display: flex; align-items: center;
+    }
+    .wordmark img {
+      height: 30px; width: auto; margin-right: 10px; flex-shrink: 0;
+    }
+    .topbar .code {
+      font-size: 12px; letter-spacing: 0.3em; color: var(--muted);
+    }
+
+    main {
+      position: relative; z-index: 2;
+      min-height: 100%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center;
+      padding: 0 24px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 12px; letter-spacing: 0.42em;
+      color: var(--cyan);
+      margin-bottom: 26px;
+      animation: rise 0.9s var(--ease) 0.05s both;
+    }
+    .big {
+      font-size: clamp(120px, 26vw, 260px);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #7dd3fc 0%, var(--blue) 48%, #1e3a8a 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 18px 44px rgba(59, 130, 246, 0.25));
+      animation: rise 1s var(--ease) 0.12s both;
+    }
+    h1 {
+      font-size: clamp(24px, 3.4vw, 36px);
+      font-weight: 700;
+      margin: 10px 0 16px;
+      animation: rise 0.9s var(--ease) 0.24s both;
+    }
+    .desc {
+      color: var(--muted);
+      font-size: 16px; line-height: 1.9;
+      max-width: 520px;
+      animation: rise 0.9s var(--ease) 0.34s both;
+    }
+    .actions {
+      margin-top: 44px;
+      display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+      animation: rise 0.9s var(--ease) 0.44s both;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 999px;
+      font-size: 15px; font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease),
+        background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--blue), #1d4ed8);
+      box-shadow: 0 14px 30px rgba(59, 130, 246, 0.35);
+    }
+    .btn-ghost {
+      color: var(--text);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.6);
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-primary:hover { box-shadow: 0 20px 40px rgba(59, 130, 246, 0.42); }
+    .btn-ghost:hover { border-color: rgba(8, 145, 178, 0.5); color: var(--cyan); }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(26px); }
+      to   { opacity: 1; transform: none; }
+    }
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-14px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, .dots { animation: none !important; }
+      .eyebrow, .big, h1, .desc, .actions, .topbar { opacity: 1 !important; transform: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="dots" aria-hidden="true"></div>
+  <div class="veil" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="wordmark" id="brand" href="index.html">CTOST</a>
+    <span class="code">ERROR · 404</span>
+  </header>
+
+  <main>
+    <span class="eyebrow">PAGE NOT FOUND</span>
+    <div class="big" aria-hidden="true">404</div>
+    <h1>这个页面走丢了</h1>
+    <p class="desc">你访问的页面不存在或已被移动。请检查地址是否正确，或从下方入口回到 CTOST。</p>
+    <div class="actions">
+      <a id="home" href="index.html" class="btn btn-primary">返回首页</a>
+      <a id="support" href="mailto:support@ctost.cn" class="btn btn-ghost">联系支持</a>
+    </div>
+  </main>
+
+  <script>
+    /* GitHub Pages 项目页中，404 会在 /<仓库名>/任意错误路径 下展示，
+       浏览器按错误 URL 解析相对链接。此处把站内链接修正为站点根路径。 */
+    (function () {
+      var seg = location.pathname.split("/").filter(Boolean);
+      var root = "/";
+      // github.io 托管且首段不等于用户名仓库（即项目页）时，首段为仓库名
+      if (location.hostname.indexOf("github.io") !== -1 && seg.length &&
+          location.hostname !== seg[0] + ".github.io") {
+        root = "/" + seg[0] + "/";
+      }
+      document.getElementById("brand").setAttribute("href", root);
+      document.getElementById("home").setAttribute("href", root);
+
+      // 注入 favicon 与顶栏 Logo（路径随站点根修正）
+      var icon = root + "assets/photos/ctost-logo.png";
+      var link = document.createElement("link");
+      link.rel = "icon";
+      link.type = "image/png";
+      link.href = icon;
+      document.head.appendChild(link);
+
+      var img = document.createElement("img");
+      img.src = icon;
+      img.alt = "";
+      document.getElementById("brand").insertBefore(img, document.getElementById("brand").firstChild);
+    })();
+  </script>
+</body>
+</html>
