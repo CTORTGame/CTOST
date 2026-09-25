@@ -30,6 +30,9 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # Pages 尚未启用时，自动通过 API 启用并设为 Actions 构建
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
